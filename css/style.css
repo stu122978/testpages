@@ -1,0 +1,54 @@
+:root{
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+header {
+    min-width: 100%;
+    min-height: 200px;
+    background-color: aquamarine;
+    text-align: center;
+    color: black;
+}
+
+nav {
+    flex: 1 120px;
+    background-color: chocolate;
+}
+
+main {
+    flex: 9;
+    background-color: burlywood;
+}
+
+footer {
+    clear: both;
+}
+
+p{
+    font-size: 1rem;
+}
+
+h1 {
+    color: rgb(255, 0, 64);
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+@media screen and (max-width: 600px) {
+    div#container {
+        flex-direction: column;
+    }
+}

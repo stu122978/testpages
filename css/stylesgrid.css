@@ -1,0 +1,81 @@
+:root{
+    font-size: 16px;
+    --my-padding-left: 1rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div#container {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    min-height: 100vh;
+}
+
+header {
+    min-width: 100%;
+    min-height: 200px;
+    background-color: aquamarine;
+    text-align: center;
+    color: black;
+}
+
+nav {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: chocolate;
+}
+
+main {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: burlywood;
+}
+
+div#fusszeile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100px;
+    background-color: cadetblue;
+}
+
+div#Impressum {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+div#Kontaktdaten {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+p{
+    font-size: 1rem;
+    padding-left: var(--my-padding-left);
+}
+
+h1 {
+    color: rgb(21, 0, 255);
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+}
+
+h2 {
+    color: rgb(255, 0, 64);
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+    div#container {
+        grid-template-columns: 1fr;
+    }
+    main {
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
