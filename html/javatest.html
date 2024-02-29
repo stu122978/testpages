@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Test</title>
+</head>
+
+<body id="seite">
+    <script>
+        // Browser API Methode "alert"
+        alert("Seite wird geladen.");
+    </script>
+
+    <p>Text auf der HTML-Seite.</p>
+
+    <button id="colorchanger">Farbe ändern</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector("#colorchanger").addEventListener("click", changeBackgroundColor)
+        })
+
+        function changeBackgroundColor() {
+            document.querySelector("#seite").style.backgroundColor= "blue";
+        }
+    </script>
+</body>
+
+</html>
